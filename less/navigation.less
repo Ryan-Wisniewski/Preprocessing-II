@@ -1,1 +1,40 @@
 // Navigation Styles here
+header{
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.header-content{
+    display: flex;
+    justify-content: center;
+    width:99%;
+    // padding: 20px 0 20px 200px;
+    border-bottom: 2px dashed @navigation-border;
+
+    div{
+        .flexBox(row nowrap, space-between, center);
+        width: 800px;
+
+    @media (max-width: 800px){
+            .flexBox(column nowrap, center, center); 
+            
+            
+    }
+
+        nav{
+            .flexBox(row nowrap, flex-end, center);
+            width: auto;
+            height: auto;
+
+            a{
+                text-decoration: none;
+                font-size: 1.6rem;
+                text-emphasis: bold;
+                margin: 2rem;
+            }
+        }
+    }
+
+    
+
+}
+

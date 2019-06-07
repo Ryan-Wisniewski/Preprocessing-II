@@ -1,1 +1,15 @@
 // Mixins in here
+
+.flexBox(@direction, @justify, @align){
+    display: flex;
+    flex-flow: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.button(@navigation-border,@button-bg, @main-bg){
+    border-bottom: 2px solid @navigation-border;
+    background-color: @button-bg;
+    color: @main-bg;
+}
+
